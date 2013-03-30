@@ -14,7 +14,8 @@ attr_accessible :name, :url
 belongs_to :ryan
 
 
-def twilio
+def voice
+    client= Twilio::REST::Client.new(ENV['TW_SID'], ENV['TW_TOK'])
 
 
 end
