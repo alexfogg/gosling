@@ -1,3 +1,4 @@
+
 # == Schema Information
 #
 # Table name: images
@@ -11,3 +12,4 @@ class Image < ActiveRecord::Base
 attr_accessible :name, :url
 belongs_to :ryan
 end
+

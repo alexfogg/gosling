@@ -10,12 +10,18 @@
 #
 
 class Audio < ActiveRecord::Base
-attr_accessible :name, :url
-belongs_to :ryan
+  attr_accessible :name, :url
+  belongs_to :ryan
 
 
+  def voice
+    client= Twilio::REST::Client.new(ENV['TW_SID'], ENV['TW_TOK'])
 
+
+  end
 
 
 end
 
+#someone calls twilio #s -> # pints to url
+#from URL -> points to controler + route
