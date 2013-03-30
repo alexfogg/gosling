@@ -14,6 +14,7 @@ gem 'bcrypt-ruby'
 gem 'haml'
 gem 'json'
 gem 'geocoder'
+gem 'localtunnel'
 
 group :assets do
   gem 'sass-rails'
