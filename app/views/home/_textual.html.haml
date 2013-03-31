@@ -2,9 +2,14 @@
 %br
 %h4 What do you want..
 
-= form_tag '/message', :remote => true do
-  = text_field_tag :number, nil, :autofocus => true, :placeholder => 'Your Phone Number'
-  = text_field_tag :name, nil, :autofocus => true, :placeholder => 'Name'
-  = submit_tag 'Hear the Voice of God', :class => 'button tiny radius success'
+.row
+  .large-6-columns
+    = form_tag '/message', :remote => true do
+      = text_field_tag :number, nil, :autofocus => true, :placeholder => 'Your Phone Number'
+      = text_field_tag :name, nil, :autofocus => true, :placeholder => 'Name'
+      = select_tag 'texts', options_for_select(@texts.map{ |a| [a, a] })
+      = submit_tag 'Hear the Voice of God', :class => 'button tiny radius success'
+  .large-6-columns
+
 
 

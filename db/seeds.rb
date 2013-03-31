@@ -1,3 +1,4 @@
+
 Audio.delete_all
 Image.delete_all
 Message.delete_all
@@ -27,3 +28,12 @@ Message.create(:category => 'silicon', :message => 'Hey girl! I know you are str
 Message.create(:category => 'silicon', :message => 'Hey girl. I know you hate waiting for your code to compile...but I thought of something we can do in the meantime -Ryan')
 
 
+a = YoutubeSearch.search('Ryan Gosling').first(20)
+videoidarray = a.map{|i| i['video_id']}
+videotitle = a.map{|t| t['title']}
+videoid = videoidarray.map!{|i| "http://youtube.com/embed/#{i}"}
+j=0
+a.each do |i|
+  Video.create(:url => videoid[j], :name => videotitle[j])
+  j+=1
+end

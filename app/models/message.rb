@@ -11,11 +11,16 @@
 #
 
 class Message < ActiveRecord::Base
-attr_accessible :name, :category, :message
-belongs_to :ryan
+  attr_accessible :name, :category, :message
+  belongs_to :ryan
 
 
-
+  def self.text(number, name, type)
+    a = Message.where("category" => type).sample.message
+    client= Twilio::REST::Client.new(ENV['TW_SID'], ENV['TW_TOK'])
+    client.account.sms.messages.create(:from => '+17329630742', :to => number, :body => a )
+      a
+  end
 
 
 end

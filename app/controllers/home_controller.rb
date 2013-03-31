@@ -1,7 +1,12 @@
 class HomeController < ApplicationController
   def index
+    @video = Video.all.sample
+    @texts = Message.all.map(&:category).uniq.sort
   end
 
+  def refresh
+    @video = Video.all.sample
+  end
 
   def call
     session[:name] = params[:name]
@@ -23,6 +28,14 @@ class HomeController < ApplicationController
       r.Play 'http://memberfiles.freewebs.com/91/14/65951491/podcast/Barney_ending.mp3'
     end
     render :xml => response.text
+  end
+
+  def message
+    number = "+1#{params[:number]}"
+    name = params[:name]
+    type = params[:texts]
+
+    @a =Message.text(number, name, type)
   end
 
 end

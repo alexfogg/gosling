@@ -6,6 +6,9 @@ Gosling::Application.routes.draw do
 
   post '/call' => 'home#call'
 
+  get '/refresh' => 'home#refresh'
+
+
   post '/voice' => 'home#voice'
 
   post '/message' => 'home#message'
