@@ -1,7 +1,11 @@
 class HomeController < ApplicationController
   def index
+    @video = Video.all.sample
   end
 
+  def refresh
+    @video = Video.all.sample
+  end
 
   def call
     client= Twilio::REST::Client.new(ENV['TW_SID'], ENV['TW_TOK'])

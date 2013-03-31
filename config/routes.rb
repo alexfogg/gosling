@@ -3,6 +3,8 @@ Gosling::Application.routes.draw do
 
   resources :home, :only => [:index, :new, :create]
 
+  get '/refresh' => 'home#refresh'
+
   get '/call' => 'home#call'
 
   post '/voice' => 'home#voice'
