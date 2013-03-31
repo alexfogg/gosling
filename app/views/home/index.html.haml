@@ -1,6 +1,5 @@
 #Video.reveal-modal
   %h1 Video Modal
-
   %p RYAN GOSLING VIDEO!!!
   / = form_for @audi, :remote => true do |f|
   /   = f.label 'Your Name'
@@ -12,10 +11,11 @@
   / %a.close-reveal-modal ×
 #Hotline.reveal-modal
   %h1 Hotline Modal
-  %p RYAN GOSLING HOTLINE!!!!!
+  = render :partial => 'hotline'
   %a.close-reveal-modal ×
 #HeyGirl.reveal-modal
   %h1 Hey Girl Modal
   %p RYAN GOSLING TEXT!!!
+  = render :partial => 'textual'
   %a.close-reveal-modal ×
 
