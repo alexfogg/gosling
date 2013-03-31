@@ -8,6 +8,9 @@ class HomeController < ApplicationController
     @video = Video.all.sample
   end
 
+  def news
+  end
+
   def call
     session[:name] = params[:name]
     number = params[:number]
