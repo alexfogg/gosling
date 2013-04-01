@@ -19,7 +19,7 @@ class HomeController < ApplicationController
     @call = client.account.calls.create(
       :from => '+17329630742',
       :to => number,
-      :url => "http://53wg.localtunnel.com/voice",
+      :url => "http://4i3v.localtunnel.com/voice",
     )
   end
 

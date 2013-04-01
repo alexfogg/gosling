@@ -16,6 +16,8 @@ gem 'json'
 gem 'geocoder'
 gem 'simple-rss'
 
+gem 'paperclip'
+
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
