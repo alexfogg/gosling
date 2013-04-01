@@ -14,7 +14,7 @@ gem 'bcrypt-ruby'
 gem 'haml'
 gem 'json'
 gem 'geocoder'
-gem 'simple-rss'
+gem 'feedzirra'
 
 group :assets do
   gem 'sass-rails'

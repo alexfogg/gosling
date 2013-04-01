@@ -26,3 +26,12 @@
   <div class="large-2 columns">
   </div>
 </div>
+
+<%= link_to('Modal2', '../home/_feed.html', :class => 'second', :remote => true) %>
+<div id="modal2" style="display:none">
+    <h2>Modal2</h2>
+    <a href="javascript:$.pageslide.close()">Close</a>
+</div>
+<script>
+    $(".second").pageslide({ direction: "left", modal: true });
+</script>
