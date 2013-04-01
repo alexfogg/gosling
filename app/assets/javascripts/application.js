@@ -5,4 +5,7 @@
 //= require 'reveal/jquery.reveal.js'
 //= require 'pageslide/jquery.pageslide.js'
 //= require 'pageslide/jquery.pageslide.min.js'
-//= require 'gosling.js'
+//= require 'goslingtest.js'
+//= require 'nivo-slider/jquery.nivo.slider.pack.js'
+//= require 'gosling.js.coffee'
+

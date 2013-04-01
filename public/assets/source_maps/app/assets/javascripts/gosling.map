@@ -6,5 +6,5 @@
     "/assets/source_maps/app/assets/javascripts/gosling.coffee"
   ],
   "names": [],
-  "mappings": "AAAA;CAAA;CAAA"
+  "mappings": "AAAA;CAAA,CAAA,CAAC,MAAC;CACC,CAAG,CAAa,MAAjB,EAAA;CACE,EAAA,CAAA,EAAA;CACE,CAAO,GAAP,GAAA;CAAA,CACY,MAAZ,EAAA;CAFF,OAAA;CAIA,GAAA,EAAA,OAAA;CANH,IACkB;CADnB,EAAC,GAAD;CAAA"
 }

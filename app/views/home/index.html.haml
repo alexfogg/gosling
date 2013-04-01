@@ -1,52 +1,14 @@
 #Video.reveal-modal
-  / %h4= @video.name
   #videoframe
     = render :partial => "frame"
   =link_to('Next Video', '/refresh', :remote => true, :class => 'button radius small info')
   %a.close-reveal-modal ×
 #Hotline.reveal-modal
-  %h1 Hotline Modal
-  %p RYAN GOSLING HOTLINE!!!!!
+  %h1 His Voice
+  .voice
+  = render :partial => 'hotline'
   %a.close-reveal-modal ×
 #HeyGirl.reveal-modal
-  %h1 Hey Girl Modal
-  %p RYAN GOSLING TEXT!!!
+  .text
+  = render :partial => 'textual'
   %a.close-reveal-modal ×
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-gosling background here
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-%br
-

@@ -190,6 +190,7 @@ GEM
       multi_json (~> 1.0)
       rubyzip
       websocket (~> 1.0.4)
+    simple-rss (1.2.3)
     slop (3.4.4)
     sprockets (2.2.2)
       hike (~> 1.2)
@@ -246,6 +247,7 @@ DEPENDENCIES
   rb-fsevent
   rspec-rails
   sass-rails
+  simple-rss
   twilio-ruby
   uglifier
   youtube_search
