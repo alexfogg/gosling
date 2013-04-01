@@ -2,6 +2,7 @@ class HomeController < ApplicationController
   def index
     @video = Video.all.sample
     @texts = Message.all.map(&:category).uniq.sort
+    @articles = Article.all()
   end
 
   def refresh

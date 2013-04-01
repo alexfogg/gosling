@@ -4,6 +4,8 @@ class AddArticlesTable < ActiveRecord::Migration
       t.text :title
       t.text :url
       t.text :summary
+      t.string :pub
+      t.text :guid
       t.timestamps
     end
   end
