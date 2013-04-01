@@ -26,12 +26,6 @@
       $.backstretch(big_images, {duration: 4000, fade: 1000});
   });
 
-- @articles.each do |article|
-  %tr
-    %td=article.summary
-    %br
-    %td=article.title
-    %br
-    %br
-    %br
+#articlefeed
+  = render :partial => 'feed'
 

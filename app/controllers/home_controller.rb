@@ -20,16 +20,17 @@ class HomeController < ApplicationController
     @call = client.account.calls.create(
       :from => '+17329630742',
       :to => number,
-      :url => "http://4627.localtunnel.com/voice",
+      :url => "http://4jnh.localtunnel.com/voice?name=#{params[:name]}",
     )
   end
 
 
   def voice
+
     response = Twilio::TwiML::Response.new do |r|
-       r.Say "Get ready for your daily dose of Mr. Ryan Gosling."
-      # r.Play Audio.all.sample.url
-      r.Play "https://s3.amazonaws.com/gosling/RyanIntrospective.mp3"
+       r.Say "Get ready for your daily dose of Mr. Ryan Gosling, #{params[:name]}."
+      r.Play Audio.all.sample.url
+      # r.Play "https://s3.amazonaws.com/gosling/RyanIntrospective.mp3"
     end
     render :xml => response.text
   end
