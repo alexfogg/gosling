@@ -13,3 +13,14 @@
   = render :partial => 'textual'
   %a.close-reveal-modal ×
 
+%a.second{:href => "#reveal-modal"} Link text
+#modal{:style => "display:none"}
+  %h2 Modal
+  %a{:href => "javascript:$.pageslide.close()"} Close
+:javascript
+  $(".second").pageslide({ direction: "left", modal: true });
+
+:javascript
+  $(window).load(function() {
+      $.backstretch(big_images, {duration: 4000, fade: 1000});
+  });

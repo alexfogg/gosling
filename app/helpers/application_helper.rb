@@ -1,5 +1,4 @@
-require 'simple-rss'
-require 'open-uri'
+require 'feedzirra'
 
 module ApplicationHelper
   # def rss_feed
@@ -10,4 +9,8 @@ module ApplicationHelper
   #   rss.items.first.link # => "http://books.slashdot.org/article.pl?sid=05/08/29/1319236&amp;from=rss"
 
   # end
+
+  def rss_feed
+
+  end
 end

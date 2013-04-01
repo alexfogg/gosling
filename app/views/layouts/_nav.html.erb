@@ -1,37 +1,34 @@
-<div class="row">
-  <div class="large-2 columns">
-    .
-  </div>
-  <div class="large-2 columns">
-    <ul class="button-group">
+<nav class= "top-bar">
+  <ul class= "title-area">
+<li class="name">
+      <h1 class = "title">
+        GOS'
+      </h1>
+    </li>
+</ul>
 
-      <li><%= link_to('Video', '#', "data-reveal-id" => 'Video', :class => 'button tiny') %></li>
-    </ul>
-  </div>
-   <div class="large-2 columns">
-    <ul class="button-group">
-      <li><%= link_to('Hotline', '#', "data-reveal-id" => 'Hotline', :class => 'button tiny') %></li>
-    </ul>
-  </div>
-  <div class="large-2 columns">
-    <ul class= "button-group">
-      <li><%= link_to('Hey Girl', '#', "data-reveal-id" => 'HeyGirl', :class => 'button tiny') %></li>
-    </ul>
-  </div>
-  <div class="large-2 columns">
-    <ul class= "button-group">
-      <li><%= link_to('Gosling Feed', '#', :id => 'newsbutton', :class => 'button tiny') %></li>
-    </ul>
-  </div>
-  <div class="large-2 columns">
-  </div>
-</div>
 
-<%= link_to('Modal2', '../home/_feed.html', :class => 'second', :remote => true) %>
-<div id="modal2" style="display:none">
-    <h2>Modal2</h2>
-    <a href="javascript:$.pageslide.close()">Close</a>
-</div>
-<script>
-    $(".second").pageslide({ direction: "left", modal: true });
-</script>
+  <section class="top-bar-section">
+    <ul class="center">
+      <div class= "row">
+
+
+        <div class = "large-3 columns">
+         <li><%= link_to('Video', '#', "data-reveal-id" => 'Video') %></li>
+       </div>
+
+       <div class = "large-3 columns">
+      <li><%= link_to('Hotline', '#', "data-reveal-id" => 'Hotline') %></li>
+        </div>
+
+      <div class = "large-3 columns">
+      <li><%= link_to('Hey Girl', '#', "data-reveal-id" => 'HeyGirl') %></li>
+    </div>
+
+      <div class = "large-2 columns">
+      <li><%= link_to('Gosling Feed', '#', :id => 'newsbutton') %></li>
+      </div>
+    </div>
+    </ul>
+    </section>
+</nav>
