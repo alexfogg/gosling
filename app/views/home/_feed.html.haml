@@ -1,7 +1,11 @@
-- @articles.each do |article|
-  %tr
-    %td= link_to(article.title, article.url)
-    %br
-    %td
-      = article.summary.html_safe
-    %br
+#goslingfeed
+  = link_to('Close', '/news', :remote => 'true', :class => 'button closefeed')
+  %br
+  - @articles.each do |article|
+    %tr
+      %td= link_to(article.title, article.url)
+      %br
+      %td
+        = article.summary.html_safe
+      %br
+
