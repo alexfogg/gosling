@@ -2,6 +2,7 @@ class HomeController < ApplicationController
   def index
     @video = Video.all.sample
     @texts = Message.all.map(&:category).uniq.sort
+    @articles = Article.all()
   end
 
   def refresh
@@ -19,7 +20,7 @@ class HomeController < ApplicationController
     @call = client.account.calls.create(
       :from => '+17329630742',
       :to => number,
-      :url => "http://4i3v.localtunnel.com/voice",
+      :url => "http://4627.localtunnel.com/voice",
     )
   end
 
@@ -27,7 +28,8 @@ class HomeController < ApplicationController
   def voice
     response = Twilio::TwiML::Response.new do |r|
        r.Say "Get ready for your daily dose of Mr. Ryan Gosling."
-      r.Play Audio.all.sample.url
+      # r.Play Audio.all.sample.url
+      r.Play "https://s3.amazonaws.com/gosling/RyanIntrospective.mp3"
     end
     render :xml => response.text
   end

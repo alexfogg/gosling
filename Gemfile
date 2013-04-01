@@ -14,7 +14,7 @@ gem 'bcrypt-ruby'
 gem 'haml'
 gem 'json'
 gem 'geocoder'
-gem 'simple-rss'
+gem 'feedzirra'
 
 gem 'paperclip'
 

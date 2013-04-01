@@ -14,6 +14,7 @@ attr_accessible :name, :img
 has_many :audios
 has_many :videos
 has_many :messages
+has_many :articles
 
 
 
