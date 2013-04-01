@@ -1,3 +1,3 @@
-$('#HeyGirl').empty().fadeIn().append('<%=j render(:partial => 'message') %>');
+$('.text').append('<%=j render(:partial => 'message') %>');
 
-
+$('.text').delay(2500).fadeOut('slow')

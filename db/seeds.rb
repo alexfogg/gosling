@@ -8,7 +8,7 @@ Video.delete_all
 
 Message.create(:category => 'quirky', :message => 'Hey girl, Biostatics Ryan Gosling is going on an extended Christmanukkah break - Ryan Gosling')
 Message.create(:category => 'cheeky', :message => 'hey girl, I would never break up with you while on vacation in Hawaii, just before a 6 hour flight. I would build us a house to live there forever. - Ryan Gosling')
-Message.create(:category => 'cheeky', :message => 'hey girl, I would never have you cook me dinner have sex with you and then break up with you while still in bed. Can we just cuddle together?')
+Message.create(:category => 'cheeky', :message => 'hey girl, I would never have you cook me dinner have sex with you and then break up with you while still in bed. Can we just cuddle together? -Ryan Gosling')
 Message.create(:category => 'cheeky', :message => 'hey girl, I would never dissapear from law school and send you a random letter saying I am in Argentina with a girlfriend, an apartment with a 2 year lease and two dogs. Can I meet your parents? -Ryan Gosling')
 
 Message.create(:category => 'cheeky', :message => 'hey girl, I would never break up with you for not riding a mountain bike, how about you ride me tonight? -Ryan Gosling')
@@ -37,3 +37,15 @@ a.each do |i|
   Video.create(:url => videoid[j], :name => videotitle[j])
   j+=1
 end
+
+
+Audio.create(:url => "https://s3.amazonaws.com/gosling/ryanromantic.mp3")
+Audio.create(:url => "https://s3.amazonaws.com/gosling/whatdoyouwant.mp3")
+Audio.create(:url => "https://s3.amazonaws.com/gosling/ryangoslingheygirl.mp3")
+
+
+
+
+
+
+
