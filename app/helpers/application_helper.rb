@@ -1,5 +1,3 @@
-require 'feedzirra'
-
 module ApplicationHelper
   # def rss_feed
   #   rss = SimpleRSS.parse open('http://slashdot.org/index.rdf')
