@@ -8,6 +8,7 @@ Gosling::Application.routes.draw do
 
   get '/refresh' => 'home#refresh'
 
+  get '/news' => 'home#news'
 
   post '/voice' => 'home#voice'
 

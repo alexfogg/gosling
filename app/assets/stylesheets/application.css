@@ -2,6 +2,7 @@
  *= require 'foundation/css/normalize.css'
  *= require 'foundation/css/foundation.min.css'
  *= require 'reveal/reveal.css'
+ *= require 'pageslide/jquery.pageslide.css'
  *= require 'nivo-slider/nivo-slider.css'
  *= require 'gosling.scss'
  */
