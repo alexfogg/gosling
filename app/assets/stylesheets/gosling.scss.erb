@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Sacramento);
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+
 .nivoSlider {
     position:relative;
     background:url(<%= asset_path "loading.gif" %>) no-repeat 50% 50%;
@@ -13,6 +16,24 @@
     display:block;
 }
 
+h2{
+  margin:0px;
+  padding: 0px;
+  font-size: 45px;
+  font-family: 'Satisfy', cursive;
+  color: #F35C78;
+
+}
+
+h3.txt{
+  text-align: center;
+  font-size: 32px;
+}
+
+h3{
+  font-family: 'Satisfy', cursive;
+    color: #F35C78;
+}
 
 li {
   list-style: none;
@@ -20,43 +41,56 @@ li {
 
 .title{
   color: white;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 
 .vidcontainer{
   width: 900px;
-  left:36%;
+  left:39%;
+  background: url("http://aultparksunrise.files.wordpress.com/2012/02/051_02_twilight_gradient_4nn.jpg") no-repeat;
+  background-size: cover;
+  opacity: .9;
+  color: white;
+  border-radius: 20px;
+  border: 3px solid white;
 }
 
 .vidcontainer iframe{
   margin-left: 40px;
-  background: url("http://m.rgbimg.com/cache1sw4YI/users/x/xy/xymonau/600/nxXqi9O.jpg");
 }
 
+.vid{
+  margin: 10px auto;
+}
 
 .button_nav_show
 {
-  background-color: #000000;
+  background-color: #00086A;
   border-radius: 10px;
-  padding: 2px 2px;
+  padding: 3px 5px;
   text-align: center;
-  margin: 10px auto;
+  margin: 20px 22%;
   -moz-box-shadow: 0 0 2px 2px #888;
   -webkit-box-shadow: 0 0 2px 2px#888;
   box-shadow: 0 0 2px 2px #888;
   width: 250px;
   clear: both;
-  color: #0099cc;
-  font-family: sans-serif;
+  color: white;
+  border: 2px solid white;
+  font-family: helvetica;
   font-weight: 800;
   opacity: .5;
-  border: 1px solid black;
+  border: 1px solid white;
   font-size: 20px;
 }
 
 div#body{
   height: 900px;
+}
+
+h5{
+  color: white;
 }
 
 .spotify{
@@ -69,7 +103,36 @@ div#body{
   bottom : 10px;
 }
 
+#front{
+  height: 315px;
+  width: 355px;
+  background: url("http://aultparksunrise.files.wordpress.com/2012/02/051_02_twilight_gradient_4nn.jpg") no-repeat;
+  border-radius: 20px;
+  padding: 10px;
+  opacity: .7;
+  font-family: 'Satisfy', cursive;
+  float: left;
+  position: fixed;
+  margin: 20px 0;
+  border: 3px solid white;
+  color: #F35C78;
+  left: 100px;
+  top: 100px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+li{
+ font-size: 22px;
+ font-weight: bold;
+ color: #F35C78;
+}
 
 .reveal-modal vidcontainer{
 background: url("http://m.rgbimg.com/cache1sw4YI/users/x/xy/xymonau/600/nxXqi9O.jpg")
+}
+
+#vidbutton{
+  text-align: center;
+  margin: 10px auto;
 }

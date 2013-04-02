@@ -1,11 +1,18 @@
+#front
+  %h2 The Gos
+  %h5 Simply click above to..
+  %ul
+    %li Hear his words
+    %li Read his mind
+    %li Admire his craft
 #Video.reveal-modal.vidcontainer
   #videoframe
     = render :partial => "frame"
     %br
-  =link_to('Next Video', '/refresh', :remote => true, :class => 'button_nav_show')
+  =link_to('Next Video', '/refresh', :remote => true, :class => 'button_nav_show', :id => 'vidbutton')
   %a.close-reveal-modal ×
 #Hotline.reveal-modal
-  %h1 His Voice
+  %h3.txt His Voice..
   .voice
   = render :partial => 'hotline'
   %a.close-reveal-modal ×
@@ -14,7 +21,7 @@
   = render :partial => 'textual'
   %a.close-reveal-modal ×
 
-%a.second{:href => "#reveal-modal"} Link text
+%a.second{:href => "#reveal-modal"}
 #modal{:style => "display:none"}
   %h2 Modal
   %a{:href => "javascript:$.pageslide.close()"} Close
