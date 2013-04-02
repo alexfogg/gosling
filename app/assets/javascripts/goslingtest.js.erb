@@ -3,9 +3,16 @@ var big_images = ["http://2.bp.blogspot.com/-Qc75bHtHyHc/T76wTDiM8aI/AAAAAAAAAeU
 $(function(){
 
   $('#articlefeed').on('click','#close_button', hide_feed);
+  $('#newsbutton').click(hide_div);
 });
 
 function hide_feed()
 {
   $('#articlefeed').fadeOut('slow');
+  $('#front').fadeIn('slow');
+
+}
+
+function hide_div(){
+  $('#front').fadeOut('slow');
 }
