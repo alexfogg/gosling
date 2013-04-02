@@ -10,6 +10,7 @@ class HomeController < ApplicationController
   end
 
   def news
+    @articles = Article.all()
   end
 
   def call
