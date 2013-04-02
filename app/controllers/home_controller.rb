@@ -21,13 +21,12 @@ class HomeController < ApplicationController
     @call = client.account.calls.create(
       :from => '+17329630742',
       :to => number,
-      :url => "http://4suv.localtunnel.com/voice?name=#{params[:name]}",
+      :url => "http://salty-plateau-3968.herokuapp.com/voice?name=#{params[:name]}",
     )
   end
 
 
   def voice
-
     response = Twilio::TwiML::Response.new do |r|
        r.Say "Get ready for your daily dose of Mr. Ryan Gosling, #{params[:name]}."
       r.Play Audio.all.sample.url
