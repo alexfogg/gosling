@@ -1,7 +1,8 @@
-#Video.reveal-modal
+#Video.reveal-modal.vidcontainer
   #videoframe
     = render :partial => "frame"
-  =link_to('Next Video', '/refresh', :remote => true, :class => 'button radius small info')
+    %br
+  =link_to('Next Video', '/refresh', :remote => true, :class => 'button_nav_show')
   %a.close-reveal-modal ×
 #Hotline.reveal-modal
   %h1 His Voice
@@ -25,5 +26,3 @@
 
 
 #articlefeed
-  #container
-    = render :partial => 'feed'

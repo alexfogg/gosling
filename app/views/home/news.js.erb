@@ -1,1 +1,1 @@
-$('#articlefeed').fadeToggle('slow')
+$('#articlefeed').empty().append('<%=j render(:partial => 'feed') %>').hide().fadeIn();
