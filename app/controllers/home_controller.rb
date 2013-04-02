@@ -10,6 +10,7 @@ class HomeController < ApplicationController
   end
 
   def news
+    Article.update_from_feed_continuously(delay_interval = 15.minutes)
     @articles = Article.all()
   end
 
