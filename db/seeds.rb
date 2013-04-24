@@ -44,4 +44,5 @@ Audio.create(:url => "https://s3.amazonaws.com/gosling/whatdoyouwant.mp3")
 Audio.create(:url => "https://s3.amazonaws.com/gosling/ryangoslingheygirl.mp3")
 Audio.create(:url => "https://s3.amazonaws.com/gosling/RyanIntrospective.mp3")
 
+Article.update_from_feed
 
