@@ -21,7 +21,7 @@ class HomeController < ApplicationController
     @call = client.account.calls.create(
       :from => '+17329630742',
       :to => number,
-      :url => "http://salty-plateau-3968.herokuapp.com/voice?name=#{params[:name]}",
+      :url => "http://ancient-ridge-8008.herokuapp.com/voice?name=#{params[:name]}",
     )
   end
 
