@@ -14,11 +14,6 @@ class Audio < ActiveRecord::Base
   belongs_to :ryan
 
 
-  def voice
-    client= Twilio::REST::Client.new(ENV['TW_SID'], ENV['TW_TOK'])
-
-
-  end
 
 
 end
